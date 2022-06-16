@@ -366,14 +366,21 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
-
+.plans-conatiner--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plan-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 30px auto 0;
+    margin: 30px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -409,6 +416,7 @@ main {
 .plan-card--price span {
     font-size: 1.3rem;
     font-weight: 300;
+    vertical-align: text-top
 }
 .plan-card--saving {
     font-size: 1.2rem;
